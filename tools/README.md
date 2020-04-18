@@ -1,7 +1,7 @@
 # tools
 ## lyx 
 ### packages install
-```bash
+```shell
 $ sudo add-apt-repository ppa:lyx-devel/release
 $ sudo apt update
 $ sudo apt install lyx
@@ -15,7 +15,7 @@ $ sudo apt install texlive-lang-other \
 $ sudo apt install culmus
 ```
 ### enable hebrew
-```bash
+```shell
 $ hebrew.sh 
 ```
 ### hebrew document settings
