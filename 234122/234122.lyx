@@ -1,0 +1,626 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\def\HeblatexEncoding{HE8}
+\def\HeblatexEncodingFile{he8enc}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package babel
+\inputencoding cp1255
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+\numeric on
+234122
+\series default
+\numeric off
+ מבוא לתכנות מערכות
+\end_layout
+
+\begin_layout Author
+ד
+\begin_inset Quotes erd
+\end_inset
+
+ר יחיאל קמחי
+\end_layout
+
+\begin_layout Quotation
+אם לא ידוע מה עליך לעשות, אל תעשה כלום
+\end_layout
+
+\begin_layout Quotation
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מבוא
+\end_layout
+
+\begin_layout Subsection
+לשאוף בעיקר לפשטות
+\end_layout
+
+\begin_layout Section
+רוח שפת 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+יש אפשרות לעשות דברים מורכבים בצורה יחסית פשוטה
+\end_layout
+
+\begin_layout Section
+ההקשר זה הדבר העיקרי בכל מסר שיש
+\end_layout
+
+\begin_layout Subsection
+המרצה משפיע איכשהו
+\end_layout
+
+\begin_layout Claim
+זה תורם להבנת הפרטים הקטנים
+\end_layout
+
+\begin_layout Quote
+ההקשר )הקונטקסט( הוא הדבר הכי חשוב שיש
+\end_layout
+
+\begin_layout Subsection
+הבלים בין 
+\begin_inset Formula $enum$
+\end_inset
+
+ ל-
+\begin_inset Formula $define$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $macro$
+\end_inset
+
+ זה משהו אחר
+\end_layout
+
+\begin_layout Claim
+ביתרון בין פונקציות 
+\begin_inset Formula $inline$
+\end_inset
+
+ הוא משהו אחר
+\end_layout
+
+\begin_layout Claim
+בזמן קומפילציה הקומפיילר מתרגם, וההבדל הוא רק בזמן ריצה
+\end_layout
+
+\begin_layout Corollary
+כל השאר אין הבדל ומשמעות היא רק לשפר את הבצועים
+\end_layout
+
+\begin_layout Subsection
+פרמטרים לפונקציה
+\end_layout
+
+\begin_layout Lemma
+את הכצובת שנשלחה לפונקציה אי אפשר לשנות
+\end_layout
+
+\begin_layout Quotation
+פה יש לנו הבטחות
+\end_layout
+
+\begin_layout Claim
+זה לא נכון לחשוב שמשתנה לא יקבל ערכים שונים בזמן ריצה
+\end_layout
+
+\begin_layout Corollary
+זה נותן אפשרות לאופטימיזציה ברמת הקומפיילר
+\end_layout
+
+\begin_layout Lemma
+מה קורה אם משנים ערך למשתנה שמוגדר כקבוע
+\end_layout
+
+\begin_layout Remarks
+בעיה היא לא ה-
+\begin_inset Formula $warning$
+\end_inset
+
+ אלא חוסר תשומת לב
+\end_layout
+
+\begin_layout Lemma
+המשתנה שלכם הוא מצביע לכתובת
+\end_layout
+
+\begin_layout Quotation
+יכול להיות כל מני דברים
+\end_layout
+
+\begin_layout Quotation
+אולי לקחתי דוגמא יותר קיצונית
+\end_layout
+
+\begin_layout Theorem
+הכל יכול לקרות
+\end_layout
+
+\begin_layout Claim
+עוד לא היה מתכנת שהצליח לכתוב תוכנית נכונה, כשהוא לא הצליח להבין מה הבעיה
+ ולא הבין מה הוא עושה
+\end_layout
+
+\begin_layout Claim
+זה נראה לא משנה בכלל
+\end_layout
+
+\begin_layout Quotation
+יש פה בעצם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עצמים
+\end_layout
+
+\begin_layout Lemma
+מומלץ לעשות ניסויים בבית
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $typedef$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $typedef$
+\end_inset
+
+ דרך לתת שם חדש לטיפוס שכבר קיים
+\end_layout
+
+\begin_layout Definition
+זה לא יוצר טיפוסים חדשים
+\end_layout
+
+\begin_layout Lemma
+מה רע ב-
+\begin_inset Formula $int$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+שום דבר, הבנת הנקרא ומשמעות.
+ יותר קל להבין
+\end_layout
+
+\begin_layout Claim
+החסרון של זה הוא שזה 
+\series bold
+רק
+\series default
+ שם חדש
+\end_layout
+
+\begin_layout Standard
+אבל זה עוזר להבין את התכנית
+\end_layout
+
+\begin_layout Quotation
+מי נגד מי
+\end_layout
+
+\begin_layout Standard
+וזה מה שאני מעדיף לעשות בשישי בערב
+\end_layout
+
+\begin_layout Quotation
+על זה יש לי משהו קטן להגיד
+\end_layout
+
+\begin_layout Definition
+עדיף לכתוב קוד ולא הערות, קוד שאפשר להבין אותו
+\end_layout
+
+\begin_layout Claim
+אנחנו אלולים לטעות
+\end_layout
+
+\begin_layout Lemma
+מה היתרונות של קומפילציה נפרדת
+\end_layout
+
+\begin_layout Proof
+לכאורה אין יתרונות.
+ מה הבנפיטס? אני יכול לקמפל מבלי לדעת על הכל.
+ מבחינה סמנטית יש משמעות.
+ האפשרות היא בסך הכל ניהול.
+ אם המנשק הוא אותו דבר אז אין שום בעיה.
+ זה רלוונטי.
+ לחסוך זמן לא ברור, לפעמים כן ולפעמים לא.
+\end_layout
+
+\begin_layout Definition
+חלונות אומר אל תחשבו אני יודע בשבילכם.
+ 
+\end_layout
+
+\begin_layout Definition
+ומערכת הפעלה אומר - בספריה המתמטית אני אומר תכליתו לבד.
+\end_layout
+
+\begin_layout Lemma
+זאת בדיוק הנקודה
+\end_layout
+
+\begin_layout Quotation
+כדי להגיע לספריה, לפעמים צריך להגיד איזו ספריה 
+\end_layout
+
+\begin_layout Lemma
+ברירת מחדל - 
+\begin_inset Formula $.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remarks
+התנאים צריכים להיות מוגדרים בכדי שלכל הצדדים יהיה מובן וברור
+\end_layout
+
+\begin_layout Lemma
+אל תחשבו שקומפיילר קורה את ההערות שלכם
+\end_layout
+
+\begin_layout Remarks
+הקומפיילר מתעלם ממילא
+\end_layout
+
+\begin_layout Lemma
+לפי העניות דעתי המבוססת זו שטות גדולה
+\end_layout
+
+\begin_layout Definition
+יש עוד דברים שאסור פעמיים - זו שגיאות קומפילציה
+\end_layout
+
+\begin_layout Quotation
+יש לנו כמה דקות לשתות וההיפך
+\end_layout
+
+\begin_layout Section
+מבנים 
+\begin_inset Formula $structures$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+שימוש בסיסי ומשמעות
+\end_layout
+
+\begin_layout Standard
+בעזרת המנגנון יוצרים מנגנון חדש.
+ 
+\end_layout
+
+\begin_layout Claim
+מקל על ארגון הקוד בעזרת מבנים מורכבים 
+\end_layout
+
+\begin_layout Quotation
+אני רוצה אותם ביחד
+\end_layout
+
+\begin_layout Remarks
+שילוב מספר דברים בשורה אחת מסבך את קריאות של הקוד
+\end_layout
+
+\begin_layout Quotation
+אין מה לעשות - 
+\begin_inset Formula $macro$
+\end_inset
+
+ כמעט אף פעם לא מחזיר ערך של חישוב
+\end_layout
+
+\begin_layout Definition
+מנבנה הוא הבסיס הטכני שעליו המחלקה בנויה
+\end_layout
+
+\begin_layout Lemma
+מה זה תלוי על הקיר ירוק ומצפצף? 
+\series bold
+דג מלוח
+\series default
+.
+ למה תלוי אותו על הקיר? 
+\series bold
+כי תלו אותו
+\series default
+.
+ למה הוא ירוק? 
+\series bold
+כי צבעו אותו
+\series default
+.
+ למה הוא מצפצף? 
+\series bold
+כדי לבלבל
+\series default
+.
+\end_layout
+
+\begin_layout Quotation
+כי זה החוק ב-
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+המון בארגון הקוד נובע מהגבלות של בני אדם
+\end_layout
+
+\begin_layout Claim
+מצביע הוא לצורך יכול העברת נתונים לא 
+\begin_inset Formula $by\ value$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Quotation
+זה פלוס גדול מבחינת התכנות.
+\end_layout
+
+\begin_layout Remarks
+זה טכני לחלותין.
+ הקומפיילר יגיד לכם ברגע שתשתמשו בזה לא נכון.
+\end_layout
+
+\begin_layout Claim
+האורטורים ברמה הכי גבוהה, דהיינו השימושיים ביותר, הם תמיד קיצור למשהו.
+\end_layout
+
+\begin_layout Subsection
+מערכים ומבצביעים 
+\end_layout
+
+\begin_layout Standard
+הקשר ביניהם למה מותר לעשות ומה אסור לעשות.
+\end_layout
+
+\begin_layout Subsection
+מצביעים לפונקציות - הקטע המעניין
+\end_layout
+
+\begin_layout Claim
+שימוש ב-
+\begin_inset Formula $void$
+\end_inset
+
+ הוא כשאין ידע קודם על סוג העצמים שהולכים לעבוד עליהם.
+\end_layout
+
+\begin_layout Definition
+טיפוסים לא מוגדרים יוצרים פונקציות שלעולם אי אפשר לסיים לתחזק אותה.
+\end_layout
+
+\begin_layout Quotation
+אתם לא רוצים גם שלכלם יעשו את זה.
+ ואהבת לרעך כמוך.
+\end_layout
+
+\begin_layout Remarks
+כשבערבבים עברית ואנגלית, גם המחשבים מתבלבלים לפעמים.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\left(\ \right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+בחישוב מתמטי זהו סימן פיסוק, אך זהו אופרטור )פקודה( להפעלת הפונקציה!
+\end_layout
+
+\begin_layout Quotation
+פחות מ-
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שורות אין שום בעיה.
+\end_layout
+
+\begin_layout Claim
+לא צריך לדעת את שם של הפונקציה, אלא על אופן הפעלתה, ההגדרה שלה.
+\end_layout
+
+\begin_layout Quotation
+שלא יחשבו ש-
+\begin_inset Formula $C$
+\end_inset
+
+ זה כל הזמן בדיחות.
+\end_layout
+
+\end_body
+\end_document
