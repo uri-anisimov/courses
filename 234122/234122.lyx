@@ -119,27 +119,27 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Section
-מבוא
-\end_layout
-
-\begin_layout Subsection
-לשאוף בעיקר לפשטות
+\begin_layout Part
+שפת C
 \end_layout
 
 \begin_layout Section
-רוח שפת 
+מבוא ורוח שפת 
 \begin_inset Formula $C$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Itemize
+לשאוף בעיקר לפשטות
+\end_layout
+
+\begin_layout Itemize
 יש אפשרות לעשות דברים מורכבים בצורה יחסית פשוטה
 \end_layout
 
-\begin_layout Section
+\begin_layout Lemma
 ההקשר זה הדבר העיקרי בכל מסר שיש
 \end_layout
 
@@ -620,6 +620,251 @@ LatexCommand tableofcontents
 \end_inset
 
  זה כל הזמן בדיחות.
+\end_layout
+
+\begin_layout Subsection
+פניני חוכמה
+\end_layout
+
+\begin_layout Definition
+שכפול קוד - אם אתם צריכים לעשות שינוי פשוט בהרבה חלקים בקוד, זה שכפול קוד.
+ זהו מנגנון מעבר אחד-אחד על הקטע הלולאתי בתהליך התיכנותי.
+ 
+\end_layout
+
+\begin_layout Section
+תהליך ההידור
+\end_layout
+
+\begin_layout Subsection
+יתרונות תהליך ההידור
+\end_layout
+
+\begin_layout Itemize
+תמיד לנסות לדמייד את טיפול בקוד בהינתן תכנית גדולה.
+\end_layout
+
+\begin_layout Itemize
+זה לא נורא שיוצאים מהתהליך רכישת ידע ללא הבנה ברורה.
+\end_layout
+
+\begin_layout Itemize
+האנשים חושבים שזה יעיל, למרות שלא בטוח שזה יעבוד נכון.
+\end_layout
+
+\begin_layout Subsection
+הקצאת זיכרון דינאמית
+\end_layout
+
+\begin_layout Itemize
+מערכת ניהול הזכרון יודעת על איזורים פנויים.
+\end_layout
+
+\begin_layout Itemize
+זה המקום שבו היעילות יכולה להתקיים.
+\end_layout
+
+\begin_layout Quote
+שימוש במה שיש לכם בין האוזניים.
+\end_layout
+
+\begin_layout Subsection
+סיכום הפרק
+\end_layout
+
+\begin_layout Remarks
+צריך לפתוח ברז, קוראים לפונקציה 
+\begin_inset Formula $open$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+מבנה כללי של תוכנה ומודולריות
+\end_layout
+
+\begin_layout Itemize
+החלוקה יותר טובה זה חלוקה לפי פונקציות שקשורות אחת לשניה.
+\end_layout
+
+\begin_layout Itemize
+בעיקר קשור להבנת הקוד והסתרה שיכולים להכיל.
+\end_layout
+
+\begin_layout Itemize
+קשור לתחזוקה.
+\end_layout
+
+\begin_layout Definition
+לוקליזציה - זה קשור לעובדה שהקוד יושב קרוב ובמקרים רבים כבר טעון לתוך התהליך.
+\end_layout
+
+\begin_layout Remarks
+אפשר להשתמש בפונקציה מבלי להצהיר עליה.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $C$
+\end_inset
+
+ זה לא 
+\begin_inset Formula $Java$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+בסופו של דבר אם מקבלים באג במודול, זו תרומה עקיפה.
+\end_layout
+
+\begin_layout Quote
+כדי להגיע לביצועים טובים של התכנה זה סותר כתיבת קוד איכותי.
+ זה ב-
+\numeric on
+95%
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהמקרים פשוט לא נכון.
+ דווקא כתיבה נכונה של תכנית משפיעה על ביצועים בצורה טובה.
+\end_layout
+
+\begin_layout Remarks
+התכנות בעיקר זה למצוא נתונים ולעבד אותם.
+\end_layout
+
+\begin_layout Subsection
+פונקציות סטטיות
+\end_layout
+
+\begin_layout Subsubsection
+ההבחנה בין התפקיד של הקומפיילר לבין תפקידו של לינקר
+\end_layout
+
+\begin_layout Definition
+תפקידו של המחבר )הלינקר( הוא לחבר דברים נכון.
+\end_layout
+
+\begin_layout Lemma
+כשהקומפיילר ב-
+\begin_inset Formula $C$
+\end_inset
+
+ רואה פונקציה סטטית, הוא לא מוציא אותה החוצה בתהליך הגדרות המודולים.
+\end_layout
+
+\begin_layout Part
+TDA
+\end_layout
+
+\begin_layout Section
+מבוא ל-
+\begin_inset Formula $ADT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula $ADT$
+\end_inset
+
+ - זהו מודול עם כללי התנהגות מוגדרים היטב, דרך המנשק.
+\end_layout
+
+\begin_layout Remarks
+המנשק מומלץ שיהיה מינימלי ושלם.
+\end_layout
+
+\begin_layout Lemma
+מי צריך להכיר ולדעת אחד על השני - האפליקציה או המודול.
+\end_layout
+
+\begin_layout Quote
+לכאורה זה לא משנה, כי לכל בעיה יש פתרון.
+\end_layout
+
+\begin_layout Definition
+המודל צריך להיות אדיש לחלוטין למשתמש בו.
+\end_layout
+
+\begin_layout Quote
+בדרך כלל צריך לעשות התאמות, לפעמים יותר מדי, אך זה סיפור אחר.
+\end_layout
+
+\begin_layout Subsection
+מה זה 
+\begin_inset Formula $ADT$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Definition
+זהו מנגנון הנותן שירותים שונים ומשונים למניפולציה נוחה בין הנתונים.
+\end_layout
+
+\begin_layout Lemma
+מה בעצם רע בזה? זה השימוש לא נתון בגישה האבסטרקטית.
+ הנקודה העיקרית היא מתן מנגנון 
+\series bold
+כללי
+\series default
+ על עבודה עם נתונים.
+\end_layout
+
+\begin_layout Quote
+רוב הדברים בחיים הם תלויי הקשר.
+\end_layout
+
+\begin_layout Subsection
+דוגמה טובה - קבוצה
+\end_layout
+
+\begin_layout Lemma
+הרשימה מקושרת של 
+\begin_inset Formula $int$
+\end_inset
+
+ מעשית מכפילה את גודלה, עקב קיום המצביעים לאיברים.
+\end_layout
+
+\begin_layout Remarks
+בכל מקום שיש הקצאות דינאמיות של זיכרון, יש מקום וסיבה לקיום באגים.
+\end_layout
+
+\begin_layout Subsubsection
+מה אנחנו רוצים מהאיברים?
+\end_layout
+
+\begin_layout Standard
+השאיפה היא להגיעה לחוסר ידע מוחלט על האיברים, הבדלה גורפת בין אפליקציה למנגנון
+ האבסטרקטי הממומש.
 \end_layout
 
 \end_body
