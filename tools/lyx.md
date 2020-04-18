@@ -31,3 +31,9 @@ $ hebrew.sh
 ```
 $ lyx -e pdf2 *.lyx
 ```
+## english
+### document settings
+- LaTeX Preamble
+```latex
+\usepackage[english]{babel}
+```
