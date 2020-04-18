@@ -37,4 +37,3 @@ $ lyx -e pdf2 *.lyx
 ```latex
 \usepackage[english]{babel}
 ```
-
