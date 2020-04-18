@@ -1,0 +1,3 @@
+# tools
+- [lyx](lyx.md)
+
