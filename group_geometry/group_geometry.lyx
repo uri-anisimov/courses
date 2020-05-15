@@ -125,19 +125,18 @@ LatexCommand tableofcontents
 \begin_layout Standard
 Школьная геометрия изучает свойства фигур.
  Неодинаковые, с точки зрения множества точек в пространстве, геометрические
- фигуры соотносимы и могут считаться одинаковыми, если они из одной к другой
- можно перейти путем элементарных, порой физических действий, например,
- с помощью движения.
- Тоесть, существует некоторые важные в геометрии признаки сохраняются при
- некоторых приобразованиях, например движении (плоскости).
- 
+ фигуры соотносимы и могут считаться одинаковыми, если от одной к другой
+ можно перейти путем элементарных, порой физических действий.
+ Например, с помощью движения.
+ Тоесть, существуют некоторые важные в геометрии признаки сохраняющиеся
+ при некоторых приобразованиях, например движении (плоскости).
 \end_layout
 
-\begin_layout Definition
+\begin_layout Definition*
 Движение 
 \end_layout
 
-\begin_layout Definition
+\begin_layout Definition*
 Движением в геометрии называют преобразование, которое сохраняет расстояние.
 \end_layout
 
@@ -148,16 +147,15 @@ LatexCommand tableofcontents
 \begin_layout Standard
 По большей части школьная геометрия исследует свойства фигур, не меняющихся
  при движениях.
- 
 \end_layout
 
-\begin_layout Definition
+\begin_layout Definition*
 Геометрия
 \end_layout
 
-\begin_layout Definition
+\begin_layout Definition*
 Геометрия (Феликс Клейн) это исследование конкретных свойств фигур, которые
- сохраняются при некоторых спебиальных преобразованиях.
+ сохраняются при некоторых специальных преобразованиях.
 \end_layout
 
 \begin_layout Example*
@@ -171,13 +169,9 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Conjecture*
-Даже преобразование очень общего типа, гомеоморфизмы, могут сохраняя некоторые
- свойства геометрических фигур из треугольника получить круг или квадрат.
- 
-\end_layout
-
-\begin_layout Conjecture*
-Пример сохраняемого свойства - выпуклость.
+Даже преобразования очень общего типа, гомеоморфизмы, могут, сохраняя некоторые
+ свойства геометрических фигур, из треугольника получить круг или квадрат.
+ Пример сохраняемого свойства - выпуклость.
 \end_layout
 
 \begin_layout Standard
@@ -189,8 +183,351 @@ LatexCommand tableofcontents
 Отражения
 \end_layout
 
-\begin_layout Standard
+\begin_layout Problem*
+Даны 3 фигуры на плоскости - равносторонний треугольник, квадрат и круг.
+ Какие преобразования движения сохраняют эти фигуры на месте?
+\end_layout
 
+\begin_layout Definition*
+Отражение 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Отражение 
+\begin_inset Formula $S_{l}$
+\end_inset
+
+ - это переворачивание плоскости относительно прямой 
+\begin_inset Formula $l$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Solution*
+Равносторонний треугольник
+\end_layout
+
+\begin_layout Solution*
+Дан равносторонний треугольник 
+\begin_inset Formula $\Delta ABC$
+\end_inset
+
+.
+ Обозначим за 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ линии, проходящие через соответсвующие вершины, и орезки которых являются
+ высотами, медианами и бисектрисами данного треугольника.
+ Из определения отражения следует, что существуют как минимум 3 преобразования
+ отражения 
+\begin_inset Formula $S_{a},S_{b},S_{c}$
+\end_inset
+
+, удовлетворяющие требованиям и являющимеся решением.
+ 
+\end_layout
+
+\begin_layout Lemma*
+Если одно движение сохраняет треугольник (на месте) и другое тоже сохраняет
+ его на месте, то их комбинирование (выполнение одного за другим) тоже сохранит
+ треугольник на месте.
+ 
+\end_layout
+
+\begin_layout Remark*
+Это фундаментальнейший принцип геометрии, состоящий в том, что композиция
+ преобразований сохраняющих какие-то свойства фигур, тоже сохраняет эти
+ свойства фигур.
+\end_layout
+
+\begin_layout Subsection
+Композиция преобразований
+\end_layout
+
+\begin_layout Definition*
+Композиция (преобразований)
+\end_layout
+
+\begin_layout Definition*
+Последовательное выполнение преобразования 
+\begin_inset Formula $A$
+\end_inset
+
+ а потом 
+\begin_inset Formula $B$
+\end_inset
+
+, называется композицией преобразований, и обозначается 
+\begin_inset Formula $B\circ A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Remark*
+Композиция не является коммутативной, то есть 
+\begin_inset Formula $\exists A,B\ A\circ B\ne B\circ A$
+\end_inset
+
+.
+ Для некоторых композиций коммутативность сохраняется, но (далеко) не для
+ всех.
+ 
+\end_layout
+
+\begin_layout Example*
+Композиции преобразований 
+\begin_inset Formula $S_{a},S_{b},S_{c}$
+\end_inset
+
+ из примера с равносторонним треугольником являются коммутативными
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+S_{a}\circ S_{b} & = & S_{b}\circ S_{a}\\
+S_{a}\circ S_{c} & = & S_{c}\circ S_{a}\\
+S_{c}\circ S_{b} & = & S_{b}\circ S_{c}
+\end{array}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Remark*
+Отражение сохраняет точки, тогда как некоторые произвольные преобразования
+ могут точки схлопывать
+\begin_inset Formula 
+\begin{align*}
+\forall a\in\left\{ \text{линии на плоскости}\right\} \land A,B\in\left\{ \text{точки в пространстве}\right\}  & A\ne B\Rightarrow S_{a}\left(A\right)\ne S_{a}\left(B\right)\\
+\exists T\in\left\{ \text{преобразования пространства}\right\} \land A,B\in\left\{ \text{точки в пространстве}\right\}  & A\ne B\Rightarrow T\left(A\right)=T\left(B\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Трансформация поворота
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $R_{O}^{\alpha}\triangleq$
+\end_inset
+
+ поворот плоскости вокруг точки 
+\begin_inset Formula $O$
+\end_inset
+
+ на угол 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma*
+Трансформация поворота является композицией отражений типа 
+\begin_inset Formula $R_{l\cap m}^{2\cdot l\angle m}=S_{l}\circ S_{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+Для треугольника это предположение соответствует утверждению
+\begin_inset Formula 
+\begin{align*}
+\forall i,j\in\left\{ a,b,c\right\}  & i\angle_{O}j=60\text{\textdegree}\\
+R_{O}^{120\textdegree}=S_{i}\cdot S_{j}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+И тогда продолжением для треугольника соответствуют следующие 6 преобразований
+ движения, сохраняющие треугольник
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+S_{a} & S_{b} & S_{c}\\
+R_{O}^{120\text{\textdegree}} & R_{O}^{240\text{\textdegree}} & R_{O}^{360\text{\textdegree}}=R_{O}^{0\text{\textdegree}}=Id
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+Отсюда следует, что композиции двух любых отражений с поворотом, являются
+ одним из этих шести преобразований.
+\end_layout
+
+\begin_layout Subsection
+Движения, сохраняющие квадрат и окружность
+\end_layout
+
+\begin_layout Problem*
+Какие преобразования движения плоскости сохраняют на месте квадрат?
+\end_layout
+
+\begin_layout Solution*
+Обозначим за 
+\begin_inset Formula $O$
+\end_inset
+
+ центр квадрата, тогда преобразования поворота 
+\begin_inset Formula $\begin{array}{cccc}
+Id & R_{O}^{90\text{°}} & R_{O}^{180\text{°}} & R_{O}^{270\text{°}}\end{array}$
+\end_inset
+
+ сохраняют квадрат на месте.
+ И еще сразу угадываются преобразования отражения 
+\begin_inset Formula $\begin{array}{cccc}
+S_{l_{1}} & S_{l_{2}} & S_{m_{1}} & S_{m_{2}}\end{array}$
+\end_inset
+
+, где 
+\begin_inset Formula $l_{1},l_{2}$
+\end_inset
+
+ это параллельные сторонам квадрата линии, проходящие через 
+\begin_inset Formula $O$
+\end_inset
+
+, а 
+\begin_inset Formula $m_{1},m_{2}$
+\end_inset
+
+ это линии диагоналей данного квадрата, тоже проходящие через точку 
+\begin_inset Formula $O$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Conjecture*
+Никаких других преобразований, сохраняющих квадрат на месте нет, кроме 
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+Id & R_{O}^{90\text{°}} & R_{O}^{180\text{°}} & R_{O}^{270\text{°}}\\
+S_{l_{1}} & S_{l_{2}} & S_{m_{1}} & S_{m_{2}}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Для доказательства требуется подробный анализ всех под-групп трансформаций.
+ Эти 8 преобразований движения замкнуты относительно операции композиции.
+ Также, любое преобразование можно выполнить в обратную сторону, то есть
+ у любого преобразования существует взаимно-обратное, которое его нейтрализует.
+\end_layout
+
+\begin_layout Definition*
+Группа формы 
+\begin_inset Formula $\begin{array}{cccc}
+Id & R_{O}^{90\text{°}} & R_{O}^{180\text{°}} & R_{O}^{270\text{°}}\\
+S_{l_{1}} & S_{l_{2}} & S_{m_{1}} & S_{m_{2}}
+\end{array}$
+\end_inset
+
+ называется 
+\series bold
+Группа Диедра
+\end_layout
+
+\begin_layout Problem*
+Какие преобразования движения сохраняют окружность?
+\end_layout
+
+\begin_layout Solution*
+Окружность это предел последовательности правильных многоугольноков, с возрастаю
+щим числом вершин (сторон).
+ То есть, это все преобразования поворота 
+\series bold
+
+\begin_inset Formula $R_{O}^{\varphi}$
+\end_inset
+
+ 
+\series default
+при всех 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, а так же все преобразования отражения 
+\begin_inset Formula $S_{l_{O}}$
+\end_inset
+
+ всех линий 
+\begin_inset Formula $l_{O}$
+\end_inset
+
+ (проходящих через 
+\begin_inset Formula $O$
+\end_inset
+
+), где 
+\begin_inset Formula $O$
+\end_inset
+
+ является центром окружности.
+\end_layout
+
+\begin_layout Definition*
+Бесконечные множества преобразований типа 
+\begin_inset Formula $\left\{ R_{O}^{\alpha}|\alpha\in\mathbb{R}\right\} \cup\left\{ S_{l}|O\in l\right\} $
+\end_inset
+
+ являются 
+\series bold
+Группами Ли
+\series default
+ 
+\end_layout
+
+\begin_layout Subsection
+Проективная геометрия
+\end_layout
+
+\begin_layout Itemize
+Помогает упрощать исследования свойств, переводя всю картину происходящего
+ в более простую, при этом сохраняя данные свойства.
+\end_layout
+
+\begin_layout Itemize
+Любое проективное преобразование переводит прямую в прямую.
+\end_layout
+
+\begin_layout Itemize
+Любое проективное преобразование сохраняет свойство касания.
+\end_layout
+
+\begin_layout Section
+Группы движений
+\end_layout
+
+\begin_layout Subsection
+Движения прямой: отражения
 \end_layout
 
 \end_body
