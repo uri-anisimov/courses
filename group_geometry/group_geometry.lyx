@@ -1,0 +1,197 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extarticle
+\begin_preamble
+\usepackage[russian,english]{babel}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package babel
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style russian
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Геометрия и Группы
+\end_layout
+
+\begin_layout Author
+Алексей Савватеев
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Записи курса лекций о геометрическом воплощении сути математики.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Введение
+\end_layout
+
+\begin_layout Subsection
+Мотивирующий пример
+\end_layout
+
+\begin_layout Standard
+Школьная геометрия изучает свойства фигур.
+ Неодинаковые, с точки зрения множества точек в пространстве, геометрические
+ фигуры соотносимы и могут считаться одинаковыми, если они из одной к другой
+ можно перейти путем элементарных, порой физических действий, например,
+ с помощью движения.
+ Тоесть, существует некоторые важные в геометрии признаки сохраняются при
+ некоторых приобразованиях, например движении (плоскости).
+ 
+\end_layout
+
+\begin_layout Definition
+Движение 
+\end_layout
+
+\begin_layout Definition
+Движением в геометрии называют преобразование, которое сохраняет расстояние.
+\end_layout
+
+\begin_layout Corollary*
+Из этого следует, что углы тоже сохраняются при преобразовании движения.
+\end_layout
+
+\begin_layout Standard
+По большей части школьная геометрия исследует свойства фигур, не меняющихся
+ при движениях.
+ 
+\end_layout
+
+\begin_layout Definition
+Геометрия
+\end_layout
+
+\begin_layout Definition
+Геометрия (Феликс Клейн) это исследование конкретных свойств фигур, которые
+ сохраняются при некоторых спебиальных преобразованиях.
+\end_layout
+
+\begin_layout Example*
+Подобные треугольники
+\end_layout
+
+\begin_layout Example*
+Треугольники, разные с точки зрения длин сторон но при одинаковых углах,
+ считаются подобными.
+ Если исследуются углы, можно позволить себе такое подобие.
+\end_layout
+
+\begin_layout Conjecture*
+Даже преобразование очень общего типа, гомеоморфизмы, могут сохраняя некоторые
+ свойства геометрических фигур из треугольника получить круг или квадрат.
+ 
+\end_layout
+
+\begin_layout Conjecture*
+Пример сохраняемого свойства - выпуклость.
+\end_layout
+
+\begin_layout Standard
+В этом курсе будет рассматриваться новый подход к геометрии, при рассмотрениях
+ преобразований и исследований свойств, которые меняются или сохраняются.
+\end_layout
+
+\begin_layout Subsection
+Отражения
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
